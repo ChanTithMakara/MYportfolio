@@ -1,0 +1,148 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background: url('../images/olw.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    background: rgba(255, 255, 255, 0.3); 
+    backdrop-filter: blur(10px);
+    border-radius: 10px; 
+    padding: 10px 0; 
+    margin-bottom: 20px;
+}
+
+.main-content {
+    flex: 1;
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.3); 
+    backdrop-filter: blur(10px); 
+    border-radius: 10px; 
+    padding: 20px;
+    margin-bottom: 20px; 
+}
+.banner {
+    background: rgba(255, 247, 247, 0.2);
+    padding: 60px 0;
+    margin-bottom: 30px;
+}
+.banner-text h1 {
+    font-size: 3rem;
+}
+.profile-img {
+    border-radius: 50%;
+    transition: box-shadow 0.3s ease;
+}
+.profile-img:hover {
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.751); 
+}
+.project-card img {
+    border-radius: 10px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+.project-card:hover img {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+.project-card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    margin-bottom: 20px; 
+}
+.project-card:hover {
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.617);
+}
+.hidden {
+    display: none!important;
+}
+.card-title {
+    font-size: 1.25rem;
+}
+.contact-form, .qr-code, .telegram-link {
+    margin-bottom: 20px;
+}
+
+.contact-form input, .contact-form textarea {
+    border-radius: 10px;
+}
+.contact-form button {
+    border-radius: 10px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+}
+.navbar-light .navbar-nav .nav-link.active {
+    font-weight: bold;
+    color: rgb(0, 255, 229);
+}
+
+.nav-link {
+    position: relative; 
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    padding: 10px 15px; 
+    margin: 0 10px; 
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    border-radius: 5px; 
+}
+
+#searchInput {
+    border-radius: 20px; 
+    border: 1px solid #ddd; 
+    padding: 10px 15px; 
+    transition: box-shadow 0.3s ease; 
+}
+
+#searchInput:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); 
+}
+
+.btn {
+    transition: box-shadow 0.3s ease, transform 0.3s ease; 
+}
+
+.btn:hover, .btn:focus {
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3); 
+    transform: translateY(-2px); 
+}
+
+.qr-code img {
+    border-radius: 20px; 
+}
+
+footer {
+    background: rgba(255, 255, 255, 0.3); 
+    backdrop-filter: blur(10px); 
+    border-radius: 10px; 
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    margin-top: auto; 
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .banner-text {
+        text-align: center;
+    }
+
+}
